@@ -31,7 +31,7 @@ To run the API on your local computer, follow these steps:
 
 1. Clone this repository
    ```bash
-   git clone https://github.com/Kopra-Lapak/koplak-API.git
+   git clone https://github.com/Kopra-Lapak/Koplak-API-CC.git
    ```
 2. Install the required dependencies
     ```bash
