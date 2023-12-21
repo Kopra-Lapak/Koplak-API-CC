@@ -164,3 +164,5 @@ module.exports = {
     refresh,
     logout,
 };
+
+// Path: src/models/authModel.js
