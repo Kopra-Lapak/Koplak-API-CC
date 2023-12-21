@@ -611,3 +611,8 @@ Response Body:
 ```
 
 </details>
+
+## Architecture
+    <a href="">
+      <img src="https://drive.google.com/file/d/1m8yUxhSIOMwwspr_i6NU98MlqGERNXdc/view?usp=sharing" />
+    </a>
