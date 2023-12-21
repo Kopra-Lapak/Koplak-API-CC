@@ -1,3 +1,137 @@
+<center>
+
+# Kopra Lapak Backend API
+
+</center>
+
+This is the documentation for the Kopra Lapak Backend API. It is a part of the Capstone Project "Kopra Lapak" by CH2-PS114 Bangkit Academy 2023 Batch 2.
+
+```markdown
+# Prerequisites
+Before running the application, make sure you have the following installed on your machine:
+- [Node.js](https://nodejs.org/) (JavaScript Runtime Environment)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
+
+# Tech We Use in Capstone Project
+- Express.js (Node.js Framework)
+- MySQL (Database)
+- nanoid (Unique ID Generator)
+- bcrypt (Password Hashing)
+- jsonwebtoken (JWT Token)
+- Cloud Run (Deployment)
+- Cloud Build (CI/CD)
+- Cloud SQL (Database)
+- Cloud Storage (Image Storage)
+- Cloud Security (Security Scanner)
+```
+
+## Getting Started
+
+To run the API on your local computer, follow these steps:
+
+1. Clone this repository
+   ```bash
+   git clone https://github.com/Kopra-Lapak/Koplak-API-CC.git
+   ```
+2. Install the required dependencies
+    ```bash
+     npm install
+     ```
+3. To run this project, you will need to add the following environment variables to your .env file
+    ```bash
+    PORT=8001
+    #DATABASE CONFIG
+    DB_HOST=127.0.0.1
+    DB_USERNAME=root
+    DB_PASSWORD=
+    DB_NAME=Change this to your own database name!
+
+    # JWT Token Key
+    ACCESS_TOKEN_KEY=change this your own random token key!
+    REFRESH_TOKEN_KEY=change this your own random refresh token!
+    ```
+4. create your own database like this
+    
+    <a href="">
+      <img src="https://drive.google.com/uc?id=1oAOkj_Ebc4468Oh5dQd54z7Jonhyb2jz" />
+    </a>
+    
+    <details>
+    <summary>DBML Code</summary>
+    
+    ```sql
+    Table blacklist {
+      id bigint [pk, increment]
+      token varchar(512)
+    }
+    
+    Table comment {
+      comment_id varchar(25) [pk]
+      publish_id varchar(25) [ref: > publish.publish_id]
+      profile_id varchar(25) [ref: > profile.profile_id]
+      comment_text varchar(500)
+      created_at datetime
+      updated_at datetime
+    }
+    
+    Table profile {
+      profile_id varchar(25) [pk]
+      user_id varchar(25) [ref: > user.user_id]
+      image_profile varchar(255)
+      fullname varchar(100)
+      role enum('buyer', 'seller')
+      address varchar(255)
+      birth date
+      gender enum('male', 'female')
+      created_at datetime
+      updated_at datetime
+    }
+    
+    Table publish {
+      publish_id varchar(25) [pk]
+      profile_id varchar(25) [ref: > profile.profile_id]
+      image_publish varchar(255)
+      price varchar(50)
+      supply varchar(50)
+      grade enum('A', 'B', 'C')
+      description varchar(255)
+      address varchar(255)
+      distance_from_user float
+      likes int
+      comments int
+      views int
+      created_at datetime
+      updated_at datetime
+    }
+    
+    Table user {
+      user_id varchar(16) [pk]
+      username varchar(100)
+      email varchar(128) [unique]
+      password varchar(256)
+      created_at datetime
+      updated_at datetime
+    }
+    ```
+    </details>
+5. Start the server
+    ```bash
+    npm start
+    ```
+
+
+6. The API will be running on http://localhost:8001.
+7. [You can test the API using Postman or any other API testing tool.](#endpoints)
+
+
+## Endpoints
+
+If you want to test the API, you can use the following endpoints
+
+OR 
+
+You can use Postman to test the API. You can download the Postman documentation [HERE](https://documenter.getpostman.com/view/29787210/2s9YknANZe)
+
 
 <details>
 <summary>User Auth</summary>
