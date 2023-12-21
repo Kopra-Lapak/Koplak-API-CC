@@ -16,11 +16,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(logs);
 
-app.use(authRoute);
-app.use(userRoute);
-app.use(publishRoute);
-app.use(commentRoute);
-app.use(profileRoute);
+app.use(authRoute); // Auth
+app.use(userRoute); // User
+app.use(publishRoute); // Publish
+app.use(commentRoute); // Comment
+app.use(profileRoute); // Profile
 
 app.listen(`${port}`, () => {
     console.log(`Server berjalan di port ${port}`);

@@ -56,3 +56,4 @@ module.exports = {
     updateUserModel,
     deleteUserModel
 };
+// Compare this snippet from src/controller/userController.js:

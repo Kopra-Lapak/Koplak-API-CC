@@ -47,7 +47,7 @@ const updateUser = async (req, res) => {
             });
         }
 
-        const [data] = await updateUserModel(body, user_id, dates);
+        const [data] = await updateUserModel(body, user_id, dates); // Update data
         if (data.affectedRows === 0) {
             res.status(404).json({
                 code: 404,

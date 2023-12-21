@@ -12,7 +12,7 @@ Before running the application, make sure you have the following installed on yo
 - [Node.js](https://nodejs.org/) (JavaScript Runtime Environment)
 - [npm](https://www.npmjs.com/) (Node Package Manager)
 
-# Tech We Use
+# Tech We Use in Capstone Project
 - Express.js (Node.js Framework)
 - MySQL (Database)
 - nanoid (Unique ID Generator)
@@ -126,11 +126,11 @@ To run the API on your local computer, follow these steps:
 
 ## Endpoints
 
-if you want to test the API, you can use the following endpoints:
+If you want to test the API, you can use the following endpoints
 
-Or 
+OR 
 
-you can use Postman to test the API. You can download the Postman documentation [HERE](https://documenter.getpostman.com/view/29787210/2s9YknANZe)
+You can use Postman to test the API. You can download the Postman documentation [HERE](https://documenter.getpostman.com/view/29787210/2s9YknANZe)
 
 
 <details>

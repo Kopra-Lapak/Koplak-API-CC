@@ -21,7 +21,7 @@ router.post('/login', validate(loginValidate), login);
 router.post('/register', limiter, validate(registerValidate), registration);
 
 // Logout
-router.post('/logout', auth, limiter, logout);
+router.post('/logout', auth, limiter, logout); 
 
 // Refresh Token
 router.post('/refresh', limiter, refresh);

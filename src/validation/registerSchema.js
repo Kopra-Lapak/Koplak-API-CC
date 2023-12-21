@@ -16,3 +16,5 @@ const registerValidate = Joi.object({
 }).options({ abortEarly: false });
 
 module.exports = { registerValidate };
+
+// Compare this snippet from src/validation/loginSchema.js:

@@ -38,3 +38,5 @@ module.exports = {
     logoutAuthModel,
     logoutCheck
 };
+
+// path: src/controller/authController.js
