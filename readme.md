@@ -614,5 +614,5 @@ Response Body:
 
 ## Architecture
 <a href="">
-    <img src="https://drive.google.com/file/d/1m8yUxhSIOMwwspr_i6NU98MlqGERNXdc/view?usp=sharing" />
+    <img src="https://drive.google.com/uc?id=1m8yUxhSIOMwwspr_i6NU98MlqGERNXdc" />
  </a>
